@@ -15,7 +15,9 @@ hat-closed-5`.split(/\n+/)
 
 const synth = {
   triggerAttackRelease(note, tempo, tick) {
-    notes[note].start(tick, 0, 10000)
+    if (notes[note].loaded) {
+      notes[note].start(tick, 0, 10000)
+    }
   }
 }
 
