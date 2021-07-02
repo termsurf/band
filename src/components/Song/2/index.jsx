@@ -1,6 +1,7 @@
 
 import React, { useLayoutEffect, useMemo } from 'react'
 import synths from '../../../instrument/synth'
+import physicals from '../../../instrument/physical'
 import Polygon from '../../Polygon'
 import Container from '../../Container'
 import Section from '../../Section'
@@ -27,27 +28,27 @@ const Song1 = () => {
 
   const baseDrum = useMemo(() => (
     new Metronome({
-      synth: synths.baseDrum,
-      beat: [ 1, 0 ],
-      notes: ['D1'],
-      colors: [spectrum[7], spectrum[5]]
+      synth: physicals.baseDrum,
+      beat: [ 1, 2 ],
+      notes: ['hat-closed-5', 'hat-closed-4'],
+      colors: [null, spectrum[5], spectrum[7]]
     })
   ), [])
 
   const hiHat = useMemo(() => (
     new Metronome({
-      synth: synths.hiHat,
-      beat: [2, 1, 1, 2],
-      notes: ['D8', 'D6'],
-      colors: [null, spectrum[5], spectrum[7]],
+      synth: physicals.baseDrum,
+      beat: [0, 1, 0, 0, 0],
+      notes: ['snare-free'],
+      colors: [spectrum[7], spectrum[5]],
     })
   ), [])
 
   const flute = useMemo(() => (
     new Metronome({
-      synth: synths.flute,
+      synth: physicals.baseDrum,
       beat: [1, 0, 1, 0, 1, 0, 0],
-      notes: ['D2'],
+      notes: ['kick2'],
       colors: [spectrum[7], spectrum[5]],
     })
   ), [])
@@ -121,7 +122,7 @@ const Song1 = () => {
         <div style={{height: '50px', width: '600px'}}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
             <CountAndPlayOnes
-              synth={synths.piano}
+              synth={physicals.guitar}
               numbers={playNumbers}
               tick={tick}
               colors={[spectrum[1], spectrum[4], spectrum[5], spectrum[7]]}

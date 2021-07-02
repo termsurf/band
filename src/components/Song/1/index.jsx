@@ -1,6 +1,5 @@
 
 import React, { useLayoutEffect, useMemo } from 'react'
-import synths from '../../../instrument/synth'
 import physicals from '../../../instrument/physical'
 import Polygon from '../../Polygon'
 import Container from '../../Container'
