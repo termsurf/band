@@ -7,9 +7,9 @@
 <br/>
 <br/>
 
-<h3 align='center'>link</h3>
+<h3 align='center'>moon.band</h3>
 <p align='center'>
-  A Math Code Band
+  A Math Tune Band
 </p>
 
 <br/>
@@ -20,7 +20,7 @@
 
 Where music meets math and code.
 
-<img src='https://github.com/mountbuild/link.band/blob/build/docs/video.gif?raw=true'/>
+<img src='https://github.com/teamdrumwork/moon.band/blob/build/docs/video.gif?raw=true'/>
 
 ### License
 
