@@ -7,9 +7,9 @@
 <br/>
 <br/>
 
-<h3 align='center'>moon.band</h3>
+<h3 align='center'>calm.band</h3>
 <p align='center'>
-  A Math Tune Band
+  Meditation Music
 </p>
 
 <br/>
