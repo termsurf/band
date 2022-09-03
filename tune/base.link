@@ -1,0 +1,27 @@
+tune (apply beats one after the other)
+  tune mark
+    bind mark, mark 4
+    tune mesh
+      tune form, form drum-beat-1
+      tune form, form guitar-1
+      tune form, form sh
+        bind base, mark 0
+        bind head, mark 1
+        bind size, mark 64
+  tune mark, mark 4
+    tune mesh
+      tune form, form drum-beat-2
+      tune form, form guitar-2
+
+tune drum-beat-2
+  host drumset, form tone drumset
+  tune line
+    tune beat
+      bind mark, mark 0
+      bind tone, link drumset/bass
+    tune beat
+      bind mark, mark 2
+      bind tone, link drumset/bass
+    tune beat
+      bind mark, mark 4
+      bind tone, link drumset/snare

@@ -1,0 +1,10 @@
+
+tone guitar
+  tone form, form string
+    name string-1
+    bind base, term e
+    bind head, term e3
+  tone form, form string
+    name string-2
+    bind base, term a
+    bind head, term a3

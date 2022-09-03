@@ -1,0 +1,11 @@
+
+flow distortion
+  head input
+
+  flow form, form oscillator
+    bind wave, term sine
+    bind base, link input
+    name oscillator
+  flow form, form gain
+    bind wave, term sine
+    bind base, link oscillator
